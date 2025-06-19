@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/word.css" />
+    <script src="scripts/word.js" defer></script>
+    <title>Word Guessing Game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Word Guessing Game</h1>
+      <p>Guess the word letter by letter. You have 6 tries!</p>
+    </header>
+
+    <main>
+      <section class="game-container">
+        <div id="word-display">Click Start to begin!</div>
+        <div id="tries-left">Tries left: 6</div>
+        <div id="guessed-letters">Guessed letters: none</div>
+
+        <input
+          type="text"
+          id="letter-input"
+          maxlength="1"
+          placeholder="Enter letter"
+          disabled
+        />
+        <button id="guess-button" disabled>Guess</button>
+        <button id="start-button">Start Game</button>
+
+        <div id="message">Welcome! Click Start Game to play.</div>
+      </section>
+    </main>
+  </body>
+</html>
